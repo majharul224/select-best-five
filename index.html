@@ -37,7 +37,7 @@
                   <img src="image/Lione Messi.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Lionel Messi</h5>
-                    <button class="btn btn-primary" onclick="addToPlayer()">Select Players</button>
+                    <button class="btn btn-primary" onclick="addToPlayer(this)">Select Players</button>
                   </div>
                 </div>
               </div>
@@ -49,7 +49,7 @@
                   <img src="image/Mbappe.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Mbappe</h5>
-                    <button class="btn btn-primary" onclick="addToPlayer()">Select Players</button>
+                    <button class="btn btn-primary" onclick="addToPlayer(this)">Select Players</button>
                   </div>
                 </div>
               </div>
@@ -61,7 +61,7 @@
                   <img src="image/Di Maria.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Di Maria</h5>
-                    <button class="btn btn-primary" onclick="addToPlayer()">Select Players</button>
+                    <button class="btn btn-primary" onclick="addToPlayer(this)">Select Players</button>
                   </div>
                 </div>
               </div>
@@ -73,7 +73,7 @@
                   <img src="image/Neymar.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Neymar</h5>
-                    <button class="btn btn-primary" onclick="addToPlayer()">Select Players</button>
+                    <button class="btn btn-primary" onclick="addToPlayer(this)">Select Players</button>
                   </div>
                 </div>
               </div>
@@ -85,7 +85,7 @@
                   <img src="image/Silva.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Silva</h5>
-                    <button class="btn btn-primary" onclick="addToPlayer()">Select Players</button>
+                    <button class="btn btn-primary" onclick="addToPlayer(this)">Select Players</button>
                   </div>
                 </div>
               </div>
@@ -96,7 +96,7 @@
                   <img src="image/Cristianor Ronaldo.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Neymar</h5>
-                    <button class="btn btn-primary" onclick="addToPlayer()">Select Players</button>
+                    <button class="btn btn-primary" onclick="addToPlayer(this)">Select Players</button>
                   </div>
                 </div>
               </div>
@@ -109,11 +109,9 @@
 
           <div class="col-4">
             <div class="bg-black text-white py-5 mb-3">
-              <h4>Selected-Player</h4>
-            <ol>
-              <li>Lorem, ipsum.</li>
-              <li>Odit, inventore.</li>
-              <li>Sequi, magnam?</li>
+              <h4>Selected-Player <span id="total-added-player">0</span></h4>
+            <ol id="player-list">
+              
             </ol>
             </div>
             <div class="bg-black text-white py-5 mb-3">
