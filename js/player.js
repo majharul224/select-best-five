@@ -1,8 +1,10 @@
 const playerArray = [];
 
-function display() {
+function display(element) {
     // console.log(cardPlayersName)
-    if (playerArray.length <= 5) {
+    if (playerArray.length <= 4) {
+        const playerName = element.parentNode.children[0].innerText;
+        playerArray.push(playerName)
         const oderList = document.getElementById("player-list")
         const li = document.createElement("li")
         for (let i = 0; i < playerArray.length; i++) {
@@ -15,10 +17,7 @@ function display() {
 }
 
 function addToPlayer(btn) {
-    const playerName = (btn.parentNode.children[0].innerText);
-    // console.log(playerName)
-    playerArray.push(playerName)
-    display()
+    display(btn)
     btn.disabled = 'true'
     console.log(playerArray)
 }
