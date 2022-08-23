@@ -1,4 +1,19 @@
   .header {
-      background-image: url("image/Lione\ Messi.jpg");
+      background-image: url("image/banner1.jpg");
       background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      height: 300px;
+      padding: 10% 20%;
+  }
+  
+  .banner-titel {
+      color: tomato;
+      font-size: 50px;
+      font-weight: bold;
+  }
+  
+  .card img {
+      height: 175px;
   }
