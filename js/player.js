@@ -27,12 +27,12 @@ function stringValue(elementId) {
     const elementValue = document.getElementById(elementId)
     const elementValueString = elementValue.value
     const elementValueNumber = parseFloat(elementValueString)
-    elementValueNumber.value = " "
+    elementValue.value = ""
     return elementValueNumber;
+
 }
 
 document.getElementById("calculater").addEventListener('click', function() {
-    // document.getElementById('player-expen').innerHTML = document.getElementById("per-player") * playerArray.length
     const player = stringValue('per-player')
     const players = player * playerArray.length
     const playerExpenses = document.getElementById("player-expenses")
